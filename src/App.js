@@ -49,8 +49,9 @@ function App() {
             <Route path="/register" element={<Register />}></Route>
             <Route path="/login" element={<Login />}></Route>
 
+          {/* eita ke dynamic krtec caichi */}
             <Route path="drone" element={<Drone />}>
-              <Route path=":voiceId" element={<BuyD />}/>
+              <Route path=":Id" element={<BuyD />} />
             </Route>
 
             <Route
